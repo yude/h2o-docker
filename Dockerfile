@@ -23,7 +23,8 @@ RUN set -ex && \
 		automake \
 		libtool \
 		autoconf \
-		ninja && \
+		ninja \
+		zlib && \
 	cd / && \
 	git clone ${LIBUV_EXTRA_ARGS} https://github.com/libuv/libuv.git && \
 		cd libuv && \
