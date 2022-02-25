@@ -24,7 +24,7 @@ RUN set -ex && \
 		libtool \
 		autoconf \
 		ninja \
-		zlib && \
+		zlib-dev && \
 	cd / && \
 	git clone ${LIBUV_EXTRA_ARGS} https://github.com/libuv/libuv.git && \
 		cd libuv && \
